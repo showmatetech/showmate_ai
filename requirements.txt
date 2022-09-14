@@ -19,6 +19,7 @@ docutils==0.16
 enum34==1.1.6
 fastapi==0.81.0
 Flask==1.1.4
+gunicorn==20.1.0
 h11==0.13.0
 httptools==0.4.0
 idna==2.10
