@@ -2,8 +2,12 @@ from fastapi import FastAPI
 from ai import start_ai
 import asyncio
 
-
 app = FastAPI()
+
+
+@app.get("/")
+async def check():
+    return {"success": True}
 
 
 # noinspection PyAsyncCall
