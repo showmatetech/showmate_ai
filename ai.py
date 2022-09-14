@@ -1,9 +1,10 @@
 import pandas as pd
 from pymongo import MongoClient
 import requests
+import os
 
-MONGO_URI = "mongodb+srv://tfmAdminUser:Rn5HXRXLVkkF2dvF@showmatch.as6x1.mongodb.net/showMatchDB?retryWrites=true&w=majority"
-BACK_URL = "http://localhost:8000/events/finish"
+MONGO_URI = os.getenv("MONGO_URI")
+BACK_URL = os.getenv("BACK_URL")
 
 
 async def start_ai(user_id):
