@@ -1,7 +1,10 @@
 import pandas as pd
 from pymongo import MongoClient
 import requests
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 BACK_URL = os.getenv("BACK_URL")

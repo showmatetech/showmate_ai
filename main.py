@@ -1,12 +1,16 @@
 from fastapi import FastAPI
 from ai import start_ai
 import asyncio
+from dotenv import load_dotenv
 
+load_dotenv()
 app = FastAPI()
 
 
 @app.get("/")
 async def check():
+    asyncio.ensure_future(start_ai('rafzgz'))
+    print('rafzgz')
     return {"success": True}
 
 
