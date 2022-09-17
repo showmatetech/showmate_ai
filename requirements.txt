@@ -7,3 +7,4 @@ python-dotenv~=0.21.0
 fastapi~=0.81.0
 gunicorn==20.1.0
 uvicorn==0.18.3
+keras-tuner==1.1.3
